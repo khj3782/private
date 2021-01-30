@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>NIGHT</title>
+	<style>
+		body {
+			text-align:center;
+			font-family: 'Sunflower', sans-serif;
+			overflow:hidden;
+		}
+		a{
+			color:white;
+			text-decoration:none;
+		}
+		.contents{
+			margin-top:50px;
+			width=320px;
+			font-size:14px;
+		}
+		.narr{
+			color:white;
+		}
+		.main{
+			position:relative;
+			width:320px;
+			height:320px;
+			//border:1px solid white;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		#one{
+			position:absolute;
+			top:155px;
+			left:50px;
+		}
+		#two{
+			position:absolute;
+			top:155px;
+			left:70px;	
+		}
+		#three{
+			position:absolute;
+			top:155px;
+			left:90px;	
+		}
+		#four{
+			position:absolute;
+			top:155px;
+			left:110px;
+		}
+		#five{
+			position:absolute;
+			top:155px;
+			left:130px;
+			
+		}
+		#six{
+			position:absolute;
+			top:155px;
+			left:150px;
+		}
+		#seven{
+			position:absolute;
+			top:155px;
+			left:170px;
+		}
+		#eight{
+			position:absolute;
+			top:155px;
+			left:190px;
+		}
+		#nine{
+			position:absolute;
+			top:155px;
+			left:210px;
+		}
+		#ten{
+			position:absolute;
+			top:155px;
+			left:230px;
+		}
+		#next{
+			position:absolute;
+			top:200px;
+			left:130px;
+		}
+		.background{
+			position:absolute;
+			top:250px;
+			left:0px;
+		}
+	</style>
+</head>
+<body bgcolor="black" onload="walk()">
+	<div class="contents">
+		<div class="narr">
+			과제를 열심히 해야지!
+		</div>
+		<div class="game">
+			<div class="main">
+				<img src="walk1.png" width="50px" class="person" id="one">
+				<img src="walk2.png" width="50px" class="person" id="two">
+				<img src="walk1.png" width="50px" class="person" id="three">
+				<img src="walk2.png" width="50px" class="person" id="four">
+				<img src="walk1.png" width="50px" class="person" id="five">
+				<img src="walk2.png" width="50px" class="person" id="six">
+				<img src="walk1.png" width="50px" class="person" id="seven">
+				<img src="walk2.png" width="50px" class="person" id="eight">
+				<img src="walk1.png" width="50px" class="person" id="nine">
+				<img src="walk2.png" width="50px" class="person" id="ten">
+				<img src="bg2.png" width="320px" class="background">
+				<a href="3-2-1.html" id="next"><strong>▷ 그렇지!</strong></a>
+			</div>
+		</div>
+	</div>
+	<script>
+		function walk() {
+			document.getElementById('next').style.display='none';
+			document.getElementById('two').style.display='none';
+			document.getElementById('three').style.display='none';
+			document.getElementById('four').style.display='none';
+			document.getElementById('five').style.display='none';
+			document.getElementById('six').style.display='none';
+			document.getElementById('seven').style.display='none';
+			document.getElementById('eight').style.display='none';
+			document.getElementById('nine').style.display='none';
+			document.getElementById('ten').style.display='none';
+			setTimeout(()=>{document.getElementById('one').style.display='none';}, 500);
+			setTimeout(()=>{document.getElementById('two').style.display='block';}, 500);
+			setTimeout(()=>{document.getElementById('two').style.display='none';}, 1000);
+			setTimeout(()=>{document.getElementById('three').style.display='block';}, 1000);
+			setTimeout(()=>{document.getElementById('three').style.display='none';}, 1500);
+			setTimeout(()=>{document.getElementById('four').style.display='block';}, 1500);
+			setTimeout(()=>{document.getElementById('four').style.display='none';}, 2000);
+			setTimeout(()=>{document.getElementById('five').style.display='block';}, 2000);
+			setTimeout(()=>{document.getElementById('five').style.display='none';}, 2500);
+			setTimeout(()=>{document.getElementById('six').style.display='block';}, 2500);
+			setTimeout(()=>{document.getElementById('six').style.display='none';}, 3000);
+			setTimeout(()=>{document.getElementById('seven').style.display='block';}, 3000);
+			setTimeout(()=>{document.getElementById('seven').style.display='none';}, 3500);
+			setTimeout(()=>{document.getElementById('eight').style.display='block';}, 3500);
+			setTimeout(()=>{document.getElementById('eight').style.display='none';}, 4000);
+			setTimeout(()=>{document.getElementById('nine').style.display='block';}, 4000);
+			setTimeout(()=>{document.getElementById('nine').style.display='none';}, 4500);
+			setTimeout(()=>{document.getElementById('ten').style.display='block';}, 4500);
+			setTimeout(()=>{document.getElementById('next').style.display='block';}, 5000);
+		}
+	</script>
+</body>
+</html>
